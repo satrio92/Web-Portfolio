@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins'],
         k2d: ['K2D']
+      },
+      colors: {
+        "primary": "#302F49",
+        "secondary": "#717394"
       }
     },
   },
