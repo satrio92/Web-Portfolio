@@ -8,11 +8,17 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
-        k2d: ['K2D']
+        k2d: ['K2D'],
+        fredoka: ['Fredoka'],
+        impact: ['Impact']
       },
       colors: {
-        "primary": "#302F49",
-        "secondary": "#717394"
+        "primary": "#FE5944",
+        "secondary": "#FFFFFF",
+        "primary-snow": "#F64D36",
+        "primary-dark": "#EB3F29",
+        "omugray": "#F3EAE8",
+        "ringyellow": "#FFD33E"
       }
     },
   },
