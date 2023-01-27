@@ -20,9 +20,9 @@
 			</div>
 			<div class="w-[880px] h-full border-y-[2.5px] border-r-[2.5px] border-primary-dark bg-primary rounded-r-lg flex items-center px-10">
 				<ul class="flex justify-center gap-[72px] text-lg text-secondary font-fredoka font-semibold tracking-widest w-full">
-					<li><router-link to="/about">ABOUT</router-link></li>
-					<li><router-link to="/about">PROJECTS</router-link></li>
-					<li><router-link to="/about">AWARDS</router-link></li>
+					<li><router-link to="/" v-scroll-to="'#about'">ABOUT</router-link></li>
+					<li><router-link to="/" v-scroll-to="'#projects'">PROJECTS</router-link></li>
+					<li><router-link to="/" v-scroll-to="'#skills'">SKILLS</router-link></li>
 				</ul>
 				<ul class="flex gap-3 items-center justify-center w-[250px]">
 					<li>

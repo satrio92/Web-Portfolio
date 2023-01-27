@@ -15,7 +15,7 @@
 					</svg>
 				</div>
 			</div>
-			<div class="flex items-center gap-[3px] h-[58px] mt-8 relative">
+			<router-link to="/" v-scroll-to="'#contact'" class="flex items-center gap-[3px] h-[58px] mt-8 relative hover:shadow-md hover:-translate-y-1 transition-all duration-150 ease-in">
 				<div class="w-[27px] h-full rounded-l-lg bg-ringyellow"></div>
 				<div class="w-[170px] h-full rounded-r-lg bg-secondary flex items-center pl-[28px]">
 					<p class="text-lg text-primary font-semibold">CONTACT ME</p>
@@ -23,7 +23,7 @@
 				<div class="w-8 h-8 bg-primary rounded-full absolute left-3 flex justify-center items-center">
 					<i class="bi bi-envelope text-secondary"></i>
 				</div>
-			</div>
+			</router-link>
 		</div>
 		<img src="../assets/image/illustration.png" alt="" class="w-[700px]">
 	</div>

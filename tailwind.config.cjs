@@ -18,7 +18,8 @@ module.exports = {
         "primary-snow": "#F64D36",
         "primary-dark": "#EB3F29",
         "omugray": "#F3EAE8",
-        "ringyellow": "#FFD33E"
+        "ringyellow": "#FFD33E",
+        "marineyellow": "#CE8E12"
       }
     },
   },
