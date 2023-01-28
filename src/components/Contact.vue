@@ -12,16 +12,16 @@
 				<div class="w-full h-full flex items-center justify-end pr-12">
 					<div class="flex flex-col gap-6">
 						<div class="flex gap-5">
-							<input type="text" name="name" id="name" placeholder="Name" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[280px] text-primary-dark font-medium outline-none">
-							<input type="text" name="email" id="email" placeholder="Email" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[280px] text-primary-dark font-medium outline-none">
+							<input type="text" name="name" id="name" placeholder="Name" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[280px] text-primary-dark font-medium outline-none" v-model="contact.name">
+							<input type="text" name="email" id="email" placeholder="Email" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[280px] text-primary-dark font-medium outline-none" v-model="contact.email">
 						</div>
-						<textarea name="message" id="message" placeholder="Message" cols="30" rows="5" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[580px] text-primary-dark font-medium outline-none"></textarea>
+						<textarea name="message" id="message" placeholder="Message" cols="30" rows="5" class="px-4 py-3 bg-secondary opacity-50 rounded-[6px] w-[580px] text-primary-dark font-medium outline-none" v-model="contact.message"></textarea>
 					</div>
 				</div>
 				<div class="w-full h-[56px] bg-primary"></div>
 				<div class="w-full h-[56px] bg-primary absolute bottom-0"></div>
 				<div class="w-[210px] h-[55px] rounded-[6px] bg-black opacity-50 absolute bottom-7 right-[60px]"></div>
-				<button class="w-[210px] h-[55px] rounded-[6px] border-2 border-primary-dark flex absolute bottom-8 right-16 overflow-hidden items-center group hover:bottom-7 hover:right-[60px] transition-all duration-300 ease-in">
+				<button class="w-[210px] h-[55px] rounded-[6px] border-2 border-primary-dark flex absolute bottom-8 right-16 overflow-hidden items-center group hover:bottom-7 hover:right-[60px] transition-all duration-300 ease-in" @click="sendMessage()">
 					<div class="w-[36px] h-full bg-ringyellow"></div>
 					<div class="w-full h-full bg-secondary text-lg text-primary font-medium flex items-center justify-center">Send Message</div>
 					<div class="w-8 h-8 rounded-full bg-primary absolute left-[14px] flex items-center justify-center text-white group-hover:rotate-45">
@@ -34,8 +34,36 @@
 </template>
 
 <script>
+
+import axios from 'axios';
+
 export default {
 	name: 'Contact',
-	components: {}
+	components: {},
+	data() {
+		return {
+			contact: {},
+			all: {
+				email: "kukuhsatrio920@gmail.com",
+				password: "Secret123"
+			}
+		}
+	},
+	methods: {
+		sendMessage() {
+			console.log(this.contact)
+			if(!this.contact.name) {
+				alert("Nama tidak boleh kosong!")
+			} else if(!this.contact.email) {
+				alert("Email tidak boleh kosong!")
+			} else if(!this.contact.message) {
+				alert("Message tidak boleh kosong!")
+			} else {
+				axios.post('https://satrio-server.vercel.app/send-message', this.contact)
+				.then(() => alert("Pesan berhasil terkirim!"))
+				.catch((err) => console.log(err))
+			}
+		}
+	}
 }
 </script>

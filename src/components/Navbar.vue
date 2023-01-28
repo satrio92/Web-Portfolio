@@ -26,17 +26,17 @@
 				</ul>
 				<ul class="flex gap-3 items-center justify-center w-[250px]">
 					<li>
-						<a href="#" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:bg-primary hover:w-[52px] hover:h-[52px] hover:border-2 hover:border-ringyellow">
+						<a href="https://www.instagram.com/kukuhsatrio_/" target="_blank" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:bg-primary hover:w-[52px] hover:h-[52px] hover:border-2 hover:border-ringyellow">
 							<i class="bi bi-instagram text-lg text-secondary"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:w-[52px] hover:h-[52px] hover:border-[2.5px] hover:border-ringyellow">
+						<a href="https://www.behance.net/satriodesign" target="_blank" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:w-[52px] hover:h-[52px] hover:border-[2.5px] hover:border-ringyellow">
 							<i class="bi bi-behance text-lg text-secondary"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:w-[52px] hover:h-[52px] hover:border-[2.5px] hover:border-ringyellow">
+						<a href="https://github.com/satrio92" target="_blank" class="w-12 h-12 rounded-full bg-primary-snow flex justify-center items-center hover:w-[52px] hover:h-[52px] hover:border-[2.5px] hover:border-ringyellow">
 							<i class="bi bi-github text-lg text-secondary"></i>
 						</a>
 					</li>
