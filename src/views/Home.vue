@@ -18,7 +18,7 @@
 			</div>
 			<div class="w-full flex justify-center py-28">
 				<div class="w-[977px] h-[560px] overflow-hidden">
-					<div class="w-[300%] h-full flex transition-all duration-500 ease-in" :class="projectMargin">
+					<div class="w-[300%] h-full flex transition-all duration-500 ease-in" :style="{ marginLeft: `-${currentProject * 100}%` }">
 						<ProjectCard :name="'Crypverse'"/>
 						<ProjectCard :name="'Crypverse 2'"/>
 						<ProjectCard :name="'Crypverse 3'"/>
@@ -104,19 +104,18 @@ export default {
 	methods: {
 		slideProject(slide) {
 			if(slide == "right") {
-				if(this.currentProject == 1954) {
+				if(this.currentProject == 2) {
 					this.currentProject = 0
 				} else {
-					this.currentProject += 977
+					this.currentProject++
 				}
 			} else {
 				if(this.currentProject == 0) {
-					this.currentProject = 1954
+					this.currentProject = 2
 				} else {
-					this.currentProject -= 977
+					this.currentProject--
 				}
 			}
-			this.projectMargin = '-ml-['+this.currentProject+'px]'
 		}
 	}
 }
