@@ -5,6 +5,8 @@ import Project from '../views/Project.vue'
 import DetailProject from '../views/DetailProject.vue'
 import Product from '../views/Product.vue'
 import Contact from '../views/Contact.vue'
+import Shortenlink from '../views/Shortenlink.vue'
+import UrlRedirect from '../views/UrlRedirect.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +40,16 @@ const router = createRouter({
         path: '/contact',
         name: 'Contact',
         component: Contact
+      },
+      {
+        path: '/shortenlink',
+        name: 'Shortenlink',
+        component: Shortenlink
+      },
+      {
+        path: '/:shorturl',
+        name: 'UrlRedirect',
+        component: UrlRedirect
       }
     ]
   })

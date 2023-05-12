@@ -22,7 +22,8 @@
 				<ul class="flex justify-center gap-[72px] text-lg text-secondary font-fredoka font-semibold tracking-widest w-full">
 					<li><router-link to="/" v-scroll-to="'#about'">ABOUT</router-link></li>
 					<li><router-link to="/" v-scroll-to="'#projects'">PROJECTS</router-link></li>
-					<li><router-link to="/" v-scroll-to="'#skills'">SKILLS</router-link></li>
+					<!-- <li><router-link to="/" v-scroll-to="'#skills'">SKILLS</router-link></li> -->
+					<li><router-link to="/shortenlink">SHORTENLINK</router-link></li>
 				</ul>
 				<ul class="flex gap-3 items-center justify-center w-[250px]">
 					<li>
