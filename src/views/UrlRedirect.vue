@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         redirect() {
-            axios.get('https://satrio-server.vercel.app/'+ this.$route.params.shorturl)
+            axios.get('https://satrio-server.vercel.app/' + this.$route.params.shorturl)
             .then((res) => window.location.href = res.data)
             .catch(() => this.notfound = true)
         }
