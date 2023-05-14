@@ -38,7 +38,7 @@
 								<div class="flex">
 									<div class="w-[55px] text-center bg-primary py-2 flex justify-center items-center text-white font-medium rounded-l-md">{{ index + 1 }}</div>
 									<div class="text-sm w-[600px] border-y-2 border-y-primary py-2 px-4 flex items-center text-primary font-medium">{{ item.fullUrl }}</div>
-									<div class="text-sm w-[300px] border-y-2 border-x-2 border-primary py-2 px-4 flex items-center text-primary font-medium rounded-r-md"><a :href="'/' + item.shortUrl">{{ 'https://kukuhsatrio.site/' + item.shortUrl }}</a></div>
+									<div class="text-sm w-[300px] border-y-2 border-x-2 border-primary py-2 px-4 flex items-center text-primary font-medium rounded-r-md"><a :href="'/' + item.shortUrl" target="_blank">{{ 'https://kukuhsatrio.site/' + item.shortUrl }}</a></div>
 								</div>
 								<div class="flex gap-3">
 									<div class="w-[55px] py-2 flex justify-center items-center border-2 border-primary rounded-md text-primary hover:bg-primary hover:text-white cursor-pointer">
