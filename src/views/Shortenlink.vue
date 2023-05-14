@@ -84,8 +84,8 @@ export default {
         },
         successHandle(res) {
             console.log(res)
-            // this.$router.push({ name: 'Shortenlink' })
-            window.location.href = '/shortlinks'
+            this.$router.push({ name: 'Shortenlink' })
+            // window.location.href = '/shortlinks'
             this.message = {}
             this.message.color = "green"
             this.message.content = "Shortlink successfully created"
