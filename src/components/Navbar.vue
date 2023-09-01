@@ -1,6 +1,6 @@
 <template>
   <div id="navbar" class="w-full flex justify-center pt-[39px]">
-		<div class="w-[1132px] h-[100px] flex items-center relative">
+		<div class="md:w-[calc(100%-52px)] lg:w-[calc(100%-52px)] xl:w-[1132px] h-[100px] flex items-center relative">
 			<div class="w-[68px] h-full border-y-[2.5px] border-l-[2.5px] border-primary-dark bg-omugray rounded-l-lg mr-1 flex items-center pl-[15px]">
 				<div class="flex flex-col gap-[10px]">
 					<div class="flex justify-end">
@@ -18,7 +18,7 @@
 					<P>SATRIO</P>
 				</router-link>
 			</div>
-			<div class="w-[880px] h-full border-y-[2.5px] border-r-[2.5px] border-primary-dark bg-primary rounded-r-lg flex items-center px-10">
+			<div class="md:w-[calc(100%-180px)] xl:w-[880px] h-full border-y-[2.5px] border-r-[2.5px] border-primary-dark bg-primary rounded-r-lg flex items-center px-10">
 				<ul class="flex justify-center gap-[72px] text-lg text-secondary font-fredoka font-semibold tracking-widest w-full">
 					<li><router-link to="/" v-scroll-to="'#about'">ABOUT</router-link></li>
 					<li><router-link to="/" v-scroll-to="'#projects'">PROJECTS</router-link></li>
